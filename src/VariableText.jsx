@@ -73,16 +73,28 @@ function VariableText({ lines, label, base, max, className = "", paused = false 
       <span aria-hidden="true">
         {lines.map((line, lineIndex) => (
           <span className="variable-line" key={lineIndex}>
-            {line.map((segment, segmentIndex) =>
-              [...segment.text].map((character, characterIndex) => (
-                <span
-                  className={`glyph ${segment.accent ? "accent" : ""}`.trim()}
-                  key={`${segmentIndex}-${characterIndex}`}
-                  style={{ fontVariationSettings: `"wght" ${base}` }}
-                >
-                  {character === " " ? "\u00a0" : character}
-                </span>
-              )),
+            {line.flatMap((segment, segmentIndex) =>
+              segment.text.split(/(\s+)/).filter(Boolean).map((token, tokenIndex) => {
+                if (/^\s+$/.test(token)) {
+                  return <span className="variable-space" key={`${segmentIndex}-${tokenIndex}`}> </span>;
+                }
+                return (
+                  <span
+                    className={`variable-word ${segment.accent ? "accent" : ""}`.trim()}
+                    key={`${segmentIndex}-${tokenIndex}`}
+                  >
+                    {[...token].map((character, characterIndex) => (
+                      <span
+                        className="glyph"
+                        key={characterIndex}
+                        style={{ fontVariationSettings: `"wght" ${base}` }}
+                      >
+                        {character}
+                      </span>
+                    ))}
+                  </span>
+                );
+              }),
             )}
           </span>
         ))}

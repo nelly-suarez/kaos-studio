@@ -10,6 +10,36 @@ import WorkPage from "./WorkPage";
 const ASSET = "/assets";
 const navItems = ["WORK", "SERVICES", "STUDIO", "CONTACT"];
 const tickerItems = ["KAOS", "WEB DESIGN", "BRANDING", "SOCIAL MEDIA", "PACKAGING"];
+const metadataByPath = {
+  "/": {
+    title: "Home — kaos.studio",
+    description: "kaos.studio is an independent creative studio creating brand identities, editorial design, social media content and visual stories shaped with purpose.",
+  },
+  "/work": {
+    title: "Work — kaos.studio",
+    description: "Explore selected branding, editorial, social media and visual identity projects created by kaos.studio.",
+  },
+  "/work/sensei-tech": {
+    title: "Sensei Tech — kaos.studio",
+    description: "Sensei Tech social media content and visual communication by kaos.studio.",
+  },
+  "/work/ascalavera": {
+    title: "Ascalavera — kaos.studio",
+    description: "Ascalavera craft beer rebranding, identity and packaging design by kaos.studio.",
+  },
+  "/services": {
+    title: "Services — kaos.studio",
+    description: "Brand identity, social media content and editorial design services shaped with purpose by kaos.studio.",
+  },
+  "/studio": {
+    title: "Studio — kaos.studio",
+    description: "Meet kaos.studio, an independent creative studio turning ideas into clear visual identities and stories.",
+  },
+  "/contact": {
+    title: "Contact — kaos.studio",
+    description: "Contact kaos.studio to discuss a brand identity, editorial, social media or visual storytelling project.",
+  },
+};
 
 function FutureLink({ label, onClick, className = "", currentPath = "" }) {
   const href = `/${label.toLowerCase()}`;
@@ -240,6 +270,20 @@ function App() {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem("kaos-theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    const metadata = metadataByPath[currentPath] || metadataByPath["/"];
+    const canonicalUrl = `https://kaoscreativestudio.com${currentPath === "/" ? "/" : currentPath}`;
+    document.title = metadata.title;
+    [
+      ["meta[name='description']", "content", metadata.description],
+      ["meta[property='og:title']", "content", metadata.title],
+      ["meta[property='og:description']", "content", metadata.description],
+      ["meta[property='og:url']", "content", canonicalUrl],
+    ].forEach(([selector, attribute, value]) => {
+      document.querySelector(selector)?.setAttribute(attribute, value);
+    });
+  }, [currentPath]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });

@@ -391,7 +391,9 @@
 
   .ascalavera-project-heading h1,
   .ascalavera-project-heading > p {
-    font-size: clamp(40px, 12vw, 58px);
+    height: auto;
+    font-size: clamp(32px, 10vw, 46px);
+    line-height: 1;
   }
 
   .ascalavera-project-summary {

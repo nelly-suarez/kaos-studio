@@ -85,6 +85,11 @@ body {
   font-family: "Roboto Flex:Light", sans-serif;
 }
 
+#root {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 button,
 a {
   color: inherit;
@@ -324,6 +329,15 @@ img {
   display: block;
   height: inherit;
   white-space: nowrap;
+}
+
+.variable-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.variable-space {
+  white-space: normal;
 }
 
 .glyph {
@@ -1010,6 +1024,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 38px;
+    height: auto;
   }
 
   .intro-layout h2,
@@ -1156,17 +1171,31 @@ img {
   }
 
   .studio-title {
-    font-size: clamp(40px, 11.5vw, 48px);
+    height: auto;
+    font-size: clamp(30px, 8.5vw, 38px);
     line-height: 1.05;
   }
 
   .hero h1 {
+    height: auto;
     margin-top: 26px;
   }
 
   .hero-title {
-    font-size: clamp(34px, 9.5vw, 40px);
+    height: auto;
+    font-size: clamp(32px, 9vw, 40px);
     line-height: 1.02;
+  }
+
+  .variable-text,
+  .variable-line {
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .variable-line {
+    white-space: normal;
   }
 
   .hero-description,
@@ -1200,6 +1229,23 @@ img {
     padding: 72px 0 64px;
   }
 
+  .studio-photo {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .studio-photo img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 56%;
+  }
+
   .intro-layout h2,
   .services h2,
   .contact-cta h2 {
@@ -1216,7 +1262,7 @@ img {
   }
 
   .services h2 {
-    height: 100px;
+    height: auto;
   }
 
   .services-grid {
@@ -1249,12 +1295,12 @@ img {
 
   .round-cta,
   .round-cta img {
-    width: 170px;
-    height: 170px;
+    width: 104px;
+    height: 104px;
   }
 
   .round-cta {
-    flex-basis: 170px;
+    flex-basis: 104px;
   }
 
   .footer {

@@ -337,7 +337,8 @@ img {
 }
 
 .variable-space {
-  white-space: normal;
+  /* Follow each line: no desktop breaks, natural wrapping on mobile. */
+  white-space: inherit;
 }
 
 .glyph {

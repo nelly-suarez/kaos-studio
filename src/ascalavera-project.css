@@ -1,0 +1,484 @@
+.ascalavera-project-page {
+  background: var(--background);
+  color: var(--text);
+}
+
+.ascalavera-project-intro {
+  position: relative;
+  width: 100%;
+  height: 737px;
+  background: var(--background);
+}
+
+.ascalavera-project-heading {
+  position: absolute;
+  top: 145px;
+  left: calc(50% - 611px);
+  width: 1250px;
+  height: 195px;
+}
+
+.ascalavera-project-heading h1,
+.ascalavera-project-heading > p {
+  width: 1250px;
+  margin: 0;
+  font-family: "Unbounded:Medium", sans-serif;
+  font-size: 91px;
+  line-height: 81.1px;
+  letter-spacing: 0;
+}
+
+.ascalavera-project-heading h1 {
+  height: 99px;
+  font-weight: 500;
+}
+
+.ascalavera-project-heading > p {
+  height: 96px;
+  color: var(--accent-text);
+  font-family: "Unbounded:ExtraLight", sans-serif;
+  font-weight: 200;
+}
+
+.ascalavera-project-summary {
+  position: absolute;
+  top: 421.5px;
+  left: calc(50% - 611px);
+  display: grid;
+  grid-template-columns: 604.5px 604.5px;
+  align-items: start;
+  gap: 41px;
+  width: 1250px;
+}
+
+.ascalavera-project-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 604.5px;
+  height: 184.84px;
+  background: #f5f5f5;
+}
+
+.ascalavera-project-logo img {
+  display: block;
+  width: 604.5px;
+  height: 184.84px;
+  object-fit: contain;
+}
+
+.ascalavera-project-summary > p,
+.ascalavera-challenge p {
+  margin: 0;
+  font-family: "Roboto Flex:Light", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: normal;
+  font-variation-settings: "GRAD" 0, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712, "wdth" 100;
+}
+
+.ascalavera-project-summary > p {
+  width: 604.5px;
+  min-height: 242px;
+}
+
+.ascalavera-challenge {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 698px;
+}
+
+.ascalavera-problem,
+.ascalavera-process {
+  position: relative;
+  height: 698px;
+  color: #f5f5f5;
+}
+
+.ascalavera-problem {
+  background: #0a0a0a;
+}
+
+.ascalavera-process {
+  background: var(--accent-red);
+}
+
+.ascalavera-problem > div,
+.ascalavera-process > div {
+  position: absolute;
+  top: 94px;
+}
+
+.ascalavera-problem > div {
+  right: 102px;
+  width: 478px;
+}
+
+.ascalavera-process > div {
+  left: 107px;
+  width: 541px;
+}
+
+.ascalavera-challenge h2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 179px;
+  margin: 0;
+  font-family: "Unbounded:ExtraLight", sans-serif;
+  font-size: 91px;
+  font-weight: 200;
+  line-height: 81.1px;
+  letter-spacing: 0;
+}
+
+.ascalavera-problem h2 span:first-child,
+.ascalavera-process h2 span:first-child {
+  color: #f5f5f5;
+}
+
+.ascalavera-problem h2 span:last-child {
+  color: var(--accent-text);
+}
+
+.ascalavera-process h2 span:last-child {
+  color: #0a0a0a;
+}
+
+.ascalavera-challenge p {
+  width: 100%;
+  color: #f5f5f5;
+}
+
+.ascalavera-problem p {
+  margin-top: 20px;
+}
+
+.ascalavera-process p {
+  width: 477px;
+  margin-left: -3px;
+}
+
+.ascalavera-process p:first-of-type {
+  margin-top: 20px;
+}
+
+.ascalavera-process p + p {
+  margin-top: 32px;
+}
+
+.ascalavera-results {
+  position: relative;
+  width: 100%;
+  height: 2819px;
+  background: var(--background);
+}
+
+.ascalavera-results > h2 {
+  position: absolute;
+  top: 116px;
+  left: calc(50% - 377px);
+  width: 677px;
+  height: 111px;
+  margin: 0;
+  text-align: center;
+  font-family: "Unbounded:ExtraLight", sans-serif;
+  font-size: 91px;
+  font-weight: 200;
+  line-height: 81.1px;
+  letter-spacing: 0;
+}
+
+.ascalavera-results > h2 span:last-child {
+  color: var(--accent-text);
+}
+
+.ascalavera-graphics {
+  position: absolute;
+  top: 275px;
+  left: calc(50% - 629px);
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  width: 1246px;
+  height: 394px;
+}
+
+.ascalavera-image-box {
+  position: relative;
+  flex: none;
+  margin: 0;
+  overflow: visible;
+}
+
+.ascalavera-image-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+  object-fit: cover;
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ascalavera-graphic-left {
+  width: 314px;
+  height: 388px;
+}
+
+.ascalavera-graphic-center {
+  width: 366px;
+  height: 388px;
+}
+
+.ascalavera-graphic-right {
+  width: 316px;
+  height: 394px;
+}
+
+.ascalavera-photo-grid {
+  position: absolute;
+  top: 754px;
+  left: calc(50% - 683px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 666.5px));
+  gap: 18.87px 20px;
+  width: 1353px;
+}
+
+.ascalavera-photo {
+  width: 666.5px;
+  aspect-ratio: 2731 / 4096;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ascalavera-image-box:hover {
+    z-index: 1;
+  }
+
+  .ascalavera-image-box:hover img {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 1199px) {
+  .ascalavera-project-intro {
+    height: auto;
+    padding: 112px 64px 116px;
+  }
+
+  .ascalavera-project-heading,
+  .ascalavera-project-summary {
+    position: static;
+    width: 100%;
+  }
+
+  .ascalavera-project-heading {
+    height: auto;
+  }
+
+  .ascalavera-project-heading h1,
+  .ascalavera-project-heading > p {
+    width: 100%;
+    height: auto;
+    font-size: clamp(66px, 8vw, 86px);
+    line-height: 0.95;
+  }
+
+  .ascalavera-project-summary {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 40px;
+    margin-top: 78px;
+  }
+
+  .ascalavera-project-logo,
+  .ascalavera-project-logo img,
+  .ascalavera-project-summary > p {
+    width: 100%;
+  }
+
+  .ascalavera-project-logo {
+    height: auto;
+    aspect-ratio: 604.5 / 184.84;
+  }
+
+  .ascalavera-project-logo img {
+    height: 100%;
+  }
+
+  .ascalavera-project-summary > p,
+  .ascalavera-challenge p {
+    min-height: 0;
+    font-size: 27px;
+  }
+
+  .ascalavera-problem > div {
+    right: 48px;
+    width: calc(100% - 112px);
+  }
+
+  .ascalavera-process > div {
+    left: 56px;
+    width: calc(100% - 104px);
+  }
+
+  .ascalavera-challenge h2 {
+    font-size: clamp(66px, 7vw, 84px);
+  }
+
+  .ascalavera-process p {
+    width: 100%;
+  }
+
+  .ascalavera-results {
+    height: auto;
+    padding: 116px 32px 48px;
+  }
+
+  .ascalavera-results > h2,
+  .ascalavera-graphics,
+  .ascalavera-photo-grid {
+    position: static;
+    transform: none;
+  }
+
+  .ascalavera-results > h2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .ascalavera-graphics {
+    justify-content: space-between;
+    gap: clamp(28px, 7vw, 82px);
+    width: 100%;
+    height: auto;
+    margin-top: 48px;
+  }
+
+  .ascalavera-graphic-left,
+  .ascalavera-graphic-center,
+  .ascalavera-graphic-right {
+    width: auto;
+    height: auto;
+    aspect-ratio: 314 / 388;
+  }
+
+  .ascalavera-graphic-left,
+  .ascalavera-graphic-right {
+    flex-basis: 25.3%;
+  }
+
+  .ascalavera-graphic-center {
+    flex-basis: 29.4%;
+    aspect-ratio: 366 / 388;
+  }
+
+  .ascalavera-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    margin-top: 85px;
+  }
+
+  .ascalavera-photo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .ascalavera-project-intro {
+    padding: 72px 20px 78px;
+  }
+
+  .ascalavera-project-heading h1,
+  .ascalavera-project-heading > p {
+    font-size: clamp(40px, 12vw, 58px);
+  }
+
+  .ascalavera-project-summary {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    margin-top: 58px;
+  }
+
+  .ascalavera-project-summary > p,
+  .ascalavera-challenge p {
+    font-size: 20px;
+  }
+
+  .ascalavera-challenge {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .ascalavera-problem,
+  .ascalavera-process {
+    height: auto;
+    min-height: 590px;
+    padding: 72px 20px 76px;
+  }
+
+  .ascalavera-problem > div,
+  .ascalavera-process > div {
+    position: static;
+    width: 100%;
+  }
+
+  .ascalavera-challenge h2 {
+    min-height: 0;
+    font-size: clamp(48px, 13vw, 62px);
+    line-height: 0.96;
+  }
+
+  .ascalavera-problem p,
+  .ascalavera-process p:first-of-type {
+    margin: 38px 0 0;
+  }
+
+  .ascalavera-process p {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .ascalavera-process p + p {
+    margin-top: 24px;
+  }
+
+  .ascalavera-results {
+    padding: 74px 20px 34px;
+  }
+
+  .ascalavera-results > h2 {
+    text-align: left;
+    font-size: clamp(46px, 12vw, 58px);
+    line-height: 1;
+  }
+
+  .ascalavera-graphics {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 52px;
+  }
+
+  .ascalavera-graphic-left,
+  .ascalavera-graphic-center,
+  .ascalavera-graphic-right {
+    width: 100%;
+    max-width: 366px;
+    justify-self: center;
+  }
+
+  .ascalavera-photo-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 64px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ascalavera-image-box img {
+    transform: none !important;
+    transition: none;
+  }
+}

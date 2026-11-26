@@ -1,0 +1,427 @@
+.sensei-project-page {
+  background: var(--background);
+  color: var(--text);
+}
+
+.sensei-project-intro {
+  position: relative;
+  width: 100%;
+  height: 737px;
+  background: var(--background);
+}
+
+.sensei-project-heading {
+  position: absolute;
+  top: 145px;
+  left: calc(50% - 611px);
+  width: 1250px;
+  height: 195px;
+}
+
+.sensei-project-heading h1,
+.sensei-project-heading > p {
+  width: 1250px;
+  margin: 0;
+  font-family: "Unbounded:Medium", sans-serif;
+  font-size: 91px;
+  line-height: 81.1px;
+  letter-spacing: 0;
+}
+
+.sensei-project-heading h1 {
+  height: 99px;
+  font-weight: 500;
+}
+
+.sensei-project-heading > p {
+  height: 96px;
+  font-family: "Unbounded:ExtraLight", sans-serif;
+  font-weight: 200;
+}
+
+.sensei-project-heading > p .accent,
+.sensei-results > h2 span:last-child {
+  color: var(--accent-text);
+}
+
+.sensei-project-summary {
+  position: absolute;
+  top: 421.5px;
+  left: calc(50% - 611px);
+  display: grid;
+  grid-template-columns: 604.5px 604.5px;
+  gap: 41px;
+  width: 1250px;
+  min-height: 184.84px;
+}
+
+.sensei-project-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 604.5px;
+  height: 184.84px;
+  background: #f5f5f5;
+}
+
+.sensei-project-logo img {
+  width: 604.5px;
+  height: auto;
+  max-height: 184.84px;
+  object-fit: contain;
+}
+
+.sensei-project-summary > p {
+  width: 604.5px;
+  min-height: 170.5px;
+  margin: 0;
+  font-family: "Roboto Flex:Light", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: normal;
+  font-variation-settings: "GRAD" 0, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712, "wdth" 100;
+}
+
+.sensei-challenge {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 638px;
+}
+
+.sensei-problem,
+.sensei-process {
+  position: relative;
+  height: 638px;
+  color: #f5f5f5;
+}
+
+.sensei-problem {
+  background: #0a0a0a;
+}
+
+.sensei-process {
+  background: var(--accent-red);
+}
+
+.sensei-problem > div,
+.sensei-process > div {
+  position: absolute;
+  top: 94px;
+}
+
+.sensei-problem > div {
+  left: max(64px, calc(100% - 580px));
+  width: 478px;
+}
+
+.sensei-process > div {
+  left: 109px;
+  width: 541px;
+}
+
+.sensei-challenge h2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 179px;
+  margin: 0;
+  font-family: "Unbounded:ExtraLight", sans-serif;
+  font-size: 91px;
+  font-weight: 200;
+  line-height: 81.1px;
+  letter-spacing: 0;
+}
+
+.sensei-problem h2 span:first-child {
+  color: #f5f5f5;
+}
+
+.sensei-problem h2 span:last-child {
+  color: var(--accent-text);
+}
+
+.sensei-process h2 {
+  height: 192px;
+  color: #f5f5f5;
+}
+
+.sensei-challenge p {
+  width: 100%;
+  margin: 20px 0 0;
+  color: #f5f5f5;
+  font-family: "Roboto Flex:Light", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: normal;
+  font-variation-settings: "GRAD" 0, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712, "wdth" 100;
+}
+
+.sensei-process p {
+  width: 477px;
+  margin-top: 7px;
+  margin-left: -3px;
+}
+
+.sensei-results {
+  position: relative;
+  width: 100%;
+  height: 2557px;
+  background: var(--background);
+}
+
+.sensei-results > h2 {
+  position: absolute;
+  top: 119px;
+  left: calc(50% - 383px);
+  width: 677px;
+  height: 111px;
+  margin: 0;
+  text-align: center;
+  font-family: "Unbounded:ExtraLight", sans-serif;
+  font-size: 91px;
+  font-weight: 200;
+  line-height: 81.1px;
+  letter-spacing: 0;
+}
+
+.sensei-results-gallery {
+  position: absolute;
+  top: 299px;
+  left: 0;
+  width: 100%;
+  height: 2224px;
+}
+
+.sensei-gallery-controls {
+  position: absolute;
+  z-index: 2;
+  top: -58px;
+  right: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+  font-family: "Archivo:Thin", sans-serif;
+  font-size: 18px;
+}
+
+.sensei-gallery-controls button {
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid var(--text);
+  border-radius: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Roboto Flex:Medium", sans-serif;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.sensei-gallery-viewport {
+  width: 100%;
+  height: 2224px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  scrollbar-color: var(--accent-red) var(--primary);
+  scrollbar-width: thin;
+}
+
+.sensei-gallery-track {
+  display: grid;
+  grid-template-columns: repeat(3, 576px);
+  grid-template-rows: repeat(3, 720px);
+  grid-auto-flow: row;
+  gap: 31px 14px;
+  width: 1791px;
+  height: 2222px;
+  padding-left: 35px;
+  padding-right: 28px;
+}
+
+.sensei-gallery-track figure {
+  width: 576px;
+  height: 720px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.sensei-gallery-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1199px) {
+  .sensei-project-intro {
+    height: auto;
+    padding: 112px 64px 116px;
+  }
+
+  .sensei-project-heading,
+  .sensei-project-summary {
+    position: static;
+    width: 100%;
+  }
+
+  .sensei-project-heading {
+    height: auto;
+  }
+
+  .sensei-project-heading h1,
+  .sensei-project-heading > p {
+    width: 100%;
+    height: auto;
+    font-size: clamp(66px, 8vw, 86px);
+    line-height: 0.95;
+  }
+
+  .sensei-project-summary {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 40px;
+    margin-top: 78px;
+  }
+
+  .sensei-project-logo,
+  .sensei-project-logo img,
+  .sensei-project-summary > p {
+    width: 100%;
+  }
+
+  .sensei-project-logo {
+    height: auto;
+    aspect-ratio: 641 / 196;
+  }
+
+  .sensei-project-summary > p {
+    font-size: 27px;
+  }
+
+  .sensei-problem > div {
+    left: 64px;
+    width: calc(100% - 112px);
+  }
+
+  .sensei-process > div {
+    left: 56px;
+    width: calc(100% - 104px);
+  }
+
+  .sensei-challenge h2 {
+    font-size: clamp(66px, 7vw, 84px);
+  }
+
+  .sensei-challenge p,
+  .sensei-process p {
+    width: 100%;
+    font-size: 27px;
+  }
+
+  .sensei-results > h2 {
+    left: 64px;
+    transform: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .sensei-project-intro {
+    padding: 72px 20px 78px;
+  }
+
+  .sensei-project-heading h1,
+  .sensei-project-heading > p {
+    font-size: clamp(42px, 12vw, 58px);
+  }
+
+  .sensei-project-summary {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    margin-top: 58px;
+  }
+
+  .sensei-project-summary > p {
+    min-height: 0;
+    font-size: 20px;
+  }
+
+  .sensei-challenge {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sensei-problem,
+  .sensei-process {
+    height: auto;
+    min-height: 520px;
+    padding: 72px 20px 76px;
+  }
+
+  .sensei-problem > div,
+  .sensei-process > div {
+    position: static;
+    width: 100%;
+  }
+
+  .sensei-challenge h2,
+  .sensei-process h2 {
+    height: auto;
+    font-size: clamp(48px, 13vw, 62px);
+    line-height: 0.96;
+  }
+
+  .sensei-challenge p,
+  .sensei-process p {
+    margin: 38px 0 0;
+    font-size: 20px;
+  }
+
+  .sensei-results {
+    height: auto;
+    padding: 74px 20px 34px;
+  }
+
+  .sensei-results > h2 {
+    position: static;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-size: clamp(46px, 12vw, 58px);
+    line-height: 1;
+  }
+
+  .sensei-results-gallery {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 52px;
+  }
+
+  .sensei-gallery-controls {
+    display: none;
+  }
+
+  .sensei-gallery-viewport {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .sensei-gallery-track {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .sensei-gallery-track figure {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+}

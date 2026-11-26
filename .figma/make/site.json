@@ -1,0 +1,10 @@
+{
+  "description": "Prepares an imported project for Figma Make deployment and preview, helping teams verify setup readiness before publishing.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
